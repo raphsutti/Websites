@@ -1,0 +1,37 @@
+body {
+	background: dodgerblue;
+	text-align: center;
+}
+
+#main {
+	width: 1000px;
+	height: 600px;	
+	background: white;
+	margin: 25px auto;
+	border: 5px solid red;
+	padding: 10px;
+}
+
+#igoco {
+	color: dodgerblue;
+}
+
+h1 {
+	text-align: center;
+	font-family: Corbel;
+	font-size: 36pt;
+	color: firebrick;
+}
+
+hr {
+	height: 2px;
+	color: blue;
+}
+
+p {
+	font-family: Calibri;
+	font-size: 12pt;
+	text-align: left;
+	text-indent: 48px;
+	color: blue;
+}
