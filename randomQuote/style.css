@@ -168,3 +168,14 @@ p :hover {
   margin-left: 20px;
 }
 
+button {
+  margin: 30px;
+}
+
+div #quoteDisplay {
+  margin: 20px;
+}
+
+blockquote {
+  color: #FFFFFF;
+}
