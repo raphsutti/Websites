@@ -13,12 +13,18 @@ var quotes = [
 	"To iterate is human, to recurse divine. - L. Peter Deutsch",
 	"Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program. - Linus Torvalds",
 	"Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. - Martin Golding",
-	"There are two ways of constructing a software design. One way is to make it so simple that there are obviously no deficiencies. And the other way is to make it so complicated that there are no obvious deficiencies. - C.A.R. Hoare"
+	"There are two ways of constructing a software design. One way is to make it so simple that there are obviously no deficiencies. And the other way is to make it so complicated that there are no obvious deficiencies. - C.A.R. Hoare",
+	" If it's a good idea, go ahead and do it. It is much easier to apologize than it is to get permission. - Grace Hopper"
 ];
 
 function newQuote() {
 	var randomNumber = Math.floor(Math.random() * quotes.length);
 	document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+	
+	var tweetQuote = quotes[randomNumber].split(' ').join('%20');
+	tweetQuote = tweetQuote.split('<br>').join('');
+	tweetQuote = "https://twitter.com/intent/tweet?text=" + tweetQuote.split('"').join('');
+   	$('.twitter-share-button').attr('href', tweetQuote);
 }
 
 // date function

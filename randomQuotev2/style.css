@@ -14,7 +14,7 @@ html, body {
 #display {
 	color: white;
 	font-size: 2.9em;
-	top: 10px;
+	top: 0px;
   border-bottom: thin solid;
   padding-bottom: 20px;
   opacity: 0.80;
@@ -89,7 +89,7 @@ p :hover {
 }
 
 .container {
-  padding-top: 6em;
+  padding-top: 1em;
   text-align: center;
 }
 
@@ -181,7 +181,11 @@ blockquote {
   color: #FFFFFF;
 }
 
-div #tweet {
- /* position:absolute;
-    width:50%;*/
+#blockquotefooter {
+  padding: 0 0 20px 0;
+  font-size: 20px;
+}
+
+#quoteTitle {
+  padding: 20px 0 0 0;
 }
