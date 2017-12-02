@@ -1,9 +1,57 @@
 body {
-	background: #999;
-	font-family: arial;
+/*	background: #999;
+	font-family: arial;*/
+	margin: 0;
 }
 
-h1, h2, li {
+header {
+	background: #999;
+	color: white;
+	padding: 15px 15px 0 15px;
+}
+
+header h1 {
+	margin: 0;
+	display: inline;
+}
+
+nav ul {
+	margin: 0;
+	display: inline;
+	padding: 0 0 0 15px;
+}
+
+nav ul li {
+	background-color: black;
+	color: white;
+	list-style-type: none;
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+nav ul li a {
+	color: white;
+}
+
+.row:after {
+	clear: both;
+	content: "";
+	display: table;	
+}
+
+.col {
+	background: #333;
+	border-radius: 5px;
+	color: white;
+	padding: 10px 0.5%;
+	float: left;
+	margin: 0.5%;
+	width: 31%;
+	text-align: center;
+}
+
+
+/*h1, h2, li {
 	color: #555;
 }
 
@@ -25,4 +73,4 @@ p {
 #special {
 	background: red;
 	color: white;
-}
+}*/
