@@ -26,4 +26,4 @@ function itemKeyPress(event) {
 	if (event.which === 13) {
 		updateItem.call(this);
 	}
-}
+} 
