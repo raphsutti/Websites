@@ -1,21 +1,29 @@
 $(document).ready(function(){
 	var lat;
 	var lon;
-	var kelvin;
-	var celsius;
+	var location;
+	var kTemp;
+	var cTemp;
+	var fTemp
+	var weather;
 	// Get user current location
 	if (navigator.geolocation) {
   		navigator.geolocation.getCurrentPosition(function(position) {
 			lat = position.coords.latitude;
 			lon = position.coords.longitude;
-	    	$("#location").html("latitude: " + lat + " longitude: " + lon);
+	    	// $("#coord").html("latitude: " + lat.toFixed(2) + " longitude: " + lon.toFixed(2));
   		
 	  		var api = "http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid=cc67c4eb972b7fb904a993f2b521f6ba";
 			$.getJSON(api, function(data) {
-				kelvin = data.main.temp;
-				celsius = kelvin - 273.15;
-				
-				$("#temp").html("The local temperature is: " + celsius.toPrecision(4) + " degrees celsius");
+				location = data.name;
+				kTemp = data.main.temp;
+				cTemp = kTemp - 273.15;
+				fTemp = 9*(kTemp-273.15)/5 + 32;
+				weather = data.weather[0].main;
+				$("#location").html(location);
+				$("#cTemp").html(cTemp.toFixed(2) + " degrees celsius");
+				$("#weather").html(weather);
+				$("#fTemp").html(fTemp.toFixed(2) + " degress fahrenheit");
 			})
 			
 		});
