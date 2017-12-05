@@ -6,6 +6,7 @@ $(document).ready(function(){
 	var cTemp;
 	var fTemp
 	var weather;
+	var tempSwap = true;
 	// Get user current location
 	if (navigator.geolocation) {
   		navigator.geolocation.getCurrentPosition(function(position) {
@@ -23,7 +24,16 @@ $(document).ready(function(){
 				$("#location").html(location);
 				$("#cTemp").html(cTemp.toFixed(2) + " degrees celsius");
 				$("#weather").html(weather);
-				$("#fTemp").html(fTemp.toFixed(2) + " degress fahrenheit");
+				// $("#fTemp").html(fTemp.toFixed(2) + " degress fahrenheit");
+				$("#tempSwapBtn").click(function(){
+					if(tempSwap) {
+						$("#cTemp").html(fTemp.toFixed(2) + " degrees fahrenheit");
+						tempSwap = false;
+					} else if (!tempSwap) {
+						$("#cTemp").html(cTemp.toFixed(2) + " degrees celsius");
+						tempSwap = true;
+					}
+				});
 			})
 			
 		});
