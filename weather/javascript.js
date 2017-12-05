@@ -22,15 +22,15 @@ $(document).ready(function(){
 				fTemp = 9*(kTemp-273.15)/5 + 32;
 				weather = data.weather[0].main;
 				$("#location").html(location);
-				$("#cTemp").html(cTemp.toFixed(2) + " degrees celsius");
+				$("#cTemp").html(cTemp.toFixed(1) + " &#8451");
 				$("#weather").html(weather);
 				// $("#fTemp").html(fTemp.toFixed(2) + " degress fahrenheit");
 				$("#tempSwapBtn").click(function(){
 					if(tempSwap) {
-						$("#cTemp").html(fTemp.toFixed(2) + " degrees fahrenheit");
+						$("#cTemp").html(fTemp.toFixed(1) + " &#8457");
 						tempSwap = false;
 					} else if (!tempSwap) {
-						$("#cTemp").html(cTemp.toFixed(2) + " degrees celsius");
+						$("#cTemp").html(cTemp.toFixed(1) + " &#8451");
 						tempSwap = true;
 					}
 				});
