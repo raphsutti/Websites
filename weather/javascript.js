@@ -26,7 +26,7 @@ $(document).ready(function(){
 				$("#location").html(location);
 				$("#cTemp").html(cTemp.toFixed(1) + " &#8451");
 				$("#weather").html(weather);
-				$("#wind").html(wind +" km/hr wind");
+				$("#wind").html(wind.toFixed(1) +" km/hr wind");
 
 				// change icons/background
 				if (weather ==="Rain" || weather ==="Drizzle") {
