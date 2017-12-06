@@ -8,6 +8,7 @@ mousedown mouseup mousemove keydown keyup
 */
 
 // Adding events
+// input event - when anything changes in the box
 numOne.addEventListener("input", add);
 numTwo.addEventListener("input", add);
 
