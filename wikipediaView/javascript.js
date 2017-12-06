@@ -4,6 +4,6 @@ usrInput.addEventListener("input", check);
 
 function check() {
 	var result = usrInput.value;
-	console.log(result);
+	// console.log(result);
 }
 
