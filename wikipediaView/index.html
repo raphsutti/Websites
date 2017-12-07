@@ -29,11 +29,20 @@
 	</div>
 	<hr class="my-4">
 	<div class="search">
-		<p class="lead" id="box1">Type your query and press enter</p>
-		<input type="text" id="wiki" class="text-center">
+		<p class="lead" id="box1">Today you will learn..</p>
+		<div class="container">
+			<input type="text" id="wikiSearch" class="text-center">
+			<div class="buttons">
+				<button id="searchbtn" class="btn btn-primary">Search</button>
+				<a href="https://en.wikipedia.org/wiki/Special:Random" target="blank"><button id="randombtn" class="btn btn-warning">Random</button></a>
+			</div>
+		</div>
 	</div>
-	<div class="random">
-		<button id="random" class="btn btn-lg btn-danger">Random</button>
+	<div class="result">
+		<ul id="output">
+			<li></li>
+			<li></li>
+		</ul>
 	</div>
 </body>
 </html>

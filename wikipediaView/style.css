@@ -11,12 +11,26 @@ body {
     font-family: 'Raleway', sans-serif;/
 }
 
-#wiki {
-	border-radius: 10px;
-	border: 3px solid #084BE2;
+.searchbar {
+	align-items: middle;
 }
 
-#random {
-	margin: 20px;
-	padding: 5px;
+#wikiSearch {
+	border-radius: 10px;
+	border: 2px solid #084BE2;
+	height: 40px;
+	/*margin: 10px;*/
+}
+
+.btn {
+	border-radius: 10px;
+	margin: 10px 5px;
+}
+
+#searchbtn {
+	margin: 0 0 0 10px;
+}
+
+#output {
+	list-style: none;
 }
