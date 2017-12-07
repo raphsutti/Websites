@@ -1,0 +1,22 @@
+body {
+	text-align: center;
+}
+
+#title {
+	padding: 30px;
+	/*font-family: 'Montserrat', sans-serif;*/
+    /*font-family: 'Nunito', sans-serif;*/
+    /*font-family: 'Roboto', sans-serif;*/
+    /*font-family: 'Roboto Slab', serif;*/
+    font-family: 'Raleway', sans-serif;/
+}
+
+#wiki {
+	border-radius: 10px;
+	border: 3px solid #084BE2;
+}
+
+#random {
+	margin: 20px;
+	padding: 5px;
+}
