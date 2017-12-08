@@ -1,16 +1,16 @@
 $(document).ready(function(){
-	//Default input
-	// document.getElementById("wikiSearch").value = "Type your query here"
-	
 	// wikiSearch.addEventListener("input", check);
 	// function check() {
 	// 	var result = wikiSearch.value;
 	// }
 
+	//Default input
+	document.getElementById("wikiSearch").value = "Type your query here";
+	
 	// Make default input disappear when clicked
-	// $("#wikiSearch").click(function(){
-	// 	document.getElementById("wikiSearch").value = "";
-	// })
+	$("#wikiSearch").click(function(){
+		document.getElementById("wikiSearch").value = "";
+	})
 
 	$('#searchbtn').click(function(){
 		var wikiSearch = $('#wikiSearch').val();
@@ -43,7 +43,14 @@ $(document).ready(function(){
 			}
 		});
 
-	})
+	});
+
+	// Allow user to press Enter key to search
+	$("#wikiSearch").keypress(function(e){
+		if(e.which==13) {
+			$("#searchbtn").click();
+		}
+	});
 })
 
 
