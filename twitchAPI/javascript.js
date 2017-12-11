@@ -1,9 +1,14 @@
 $(document).ready(function(){
-	// wikiSearch.addEventListener("input", check);
-	// function check() {
-	// 	var result = wikiSearch.value;
-	// }
+	// get free code camp stream info and status api call
+	$.getJSON(url,function(data1) {
+		var url = 'https://wind-bow.gomix.me/twitch-api/freecodecamp';
+		if(data1.stream === null) {
+			$("#fccStatus").html("Free Code Camp is currently OFFLINE");
+		} else {
+			$("#fccStatus").html("Free Code Camp is currently ONLINE");
 
+		}
+	});
 	//Default input
 	document.getElementById("wikiSearch").value = "Type your query here";
 	

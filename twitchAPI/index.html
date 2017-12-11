@@ -27,26 +27,42 @@
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 <body>
-	<div class="page-header text-center">
-		<h1 id="title">Twitch Live Streamers</h1>
-	</div>
-	<hr class="my-4">
-	<div class="search">
-		<p class="lead" id="box1">We're live!</p>
-		<div class="container">
-			<input type="text" id="wikiSearch" class="text-center">
-			<!-- <div class="buttons">
-				<button id="searchbtn" class="btn btn-primary">Search</button>
-				<a href="https://en.wikipedia.org/wiki/Special:Random" target="blank"><button id="randombtn" class="btn btn-warning">Random</button></a>
-			</div> -->
+	<div class="container">
+		<div class="page-header text-center">
+			<h1 id="title">Twitch Live Streamers JSON API</h1>
+			<h3 id="fccStatus"></h3>
 		</div>
-	<hr class="my-4">	
-	</div>
-	<div class="result">
-		<ul id="output">
-			<li></li>
-			<li></li>
-		</ul>
+		<hr class="my-4">
+		<div class="search">
+			<p class="lead" id="box1">We're live!</p>
+			<div class="container">
+				<input type="text" id="wikiSearch" class="text-center">
+				
+			</div>
+		<hr class="my-4">	
+		</div>
+		<div class="row">
+			
+			<div class="col-md-4">
+				Logo:
+			</div>
+			<div class="col-md-4">
+				Display Name:
+			</div>
+			<div class="col-md-4">
+				Status:
+			</div>
+			
+		</div>
+		<div id="followerInfo">
+			
+		</div>
+		<div class="result">
+			<ul id="output">
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
 	</div>
 </body>
 </html>
