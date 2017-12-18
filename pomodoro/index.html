@@ -6,6 +6,12 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	
+	<!-- Sound -->
+	<audio id="buzzer" src="http://soundjig.com/pages/soundfx/beeps.php?mp3=beep47.mp3"></audio>
+
+	<!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,13 +30,13 @@
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 <body>
-	<div>
+	<div class="text-center">
 		<h1>Pomodoro Clock</h1>
 		<h3>Free Code Camp Project</h3>
 		<div class="timeDiv">
 			<h1 id="title1">Session Time</h1>
 			<a href="#" class="btn btn-primary" id="minus5Clock">-</a>
-			<h2 id="num">5</h2>
+			<h2 id="num">25</h2>
 			<a href="#" class="btn btn-primary" id="add5Clock">+</a>
 			<a href="#" class="btn btn-primary" id="reset">Reset</a>
 		</div>
