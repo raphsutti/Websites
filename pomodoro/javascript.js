@@ -21,6 +21,7 @@ $(document).ready(function(){
 				buzzer.play();
 				clearInterval(counter);
 				var startBreak = setInterval(breakTimer, 1000);
+				breakTime *= 60;
 				$("#num").hide();
 			}
 
@@ -35,7 +36,6 @@ $(document).ready(function(){
 			function breakTimer() {
 				$("#timeType").html("Break Time:");
 				$("#breakNum, #timeType").show();
-				breakTime *= 60;
 				breakTime -= 1;
 				if(breakTime === 0) {
 					clearInterval(startBreak);
@@ -49,7 +49,7 @@ $(document).ready(function(){
 				} else {
 					$("#breakNum").html(Math.floor(breakTime/60)+":"+"0"+breakTime%60)
 				}
-					$("#breakNum").html(breakTime);
+					// $("#breakNum").html(breakTime);
 				}
 
 		}
