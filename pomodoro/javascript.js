@@ -9,7 +9,7 @@ $(document).ready(function(){
 	$("#start").click(function() {
 		// run this every 1s
 		var counter = setInterval(timer, 1000);
-
+		count *= 60;
 		function timer() {
 			// hide variables
 			$("#start, #minus5Clock, #add5Clock, #add5Break, #minus5Break, #breakNum, #title1, #title2").hide();
@@ -23,11 +23,19 @@ $(document).ready(function(){
 				var startBreak = setInterval(breakTimer, 1000);
 				$("#num").hide();
 			}
-			$("#num").html(count);
+
+			// display minutes and seconds
+			if (count % 60 >= 10) {
+				$("#num").html(Math.floor(count/60)+":"+count%60)
+			} else {
+				$("#num").html(Math.floor(count/60)+":"+"0"+count%60)
+			}
+			// $("#num").html(count);
 
 			function breakTimer() {
 				$("#timeType").html("Break Time:");
-				$("#breakNum").show();
+				$("#breakNum, #timeType").show();
+				breakTime *= 60;
 				breakTime -= 1;
 				if(breakTime === 0) {
 					clearInterval(startBreak);
@@ -35,8 +43,14 @@ $(document).ready(function(){
 					$("#reset").show();
 					$("#breakNum, #timeType").hide();
 				}
-				$("#breakNum").html(breakTime);
-			}
+				// display minutes and seconds
+				if (breakTime % 60 >= 10) {
+					$("#breakNum").html(Math.floor(breakTime/60)+":"+breakTime%60)
+				} else {
+					$("#breakNum").html(Math.floor(breakTime/60)+":"+"0"+breakTime%60)
+				}
+					$("#breakNum").html(breakTime);
+				}
 
 		}
 
