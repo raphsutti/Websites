@@ -7,11 +7,14 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	
-	<!-- Sound -->
-	<audio id="buzzer" src="http://soundjig.com/pages/soundfx/beeps.php?mp3=beep47.mp3"></audio>
+	<!-- Sounds -->
+	<audio id="click" src="http://www.freesfx.co.uk/rx2/mp3s/6/18660_1464810669.mp3"></audio>
+  	<audio id="wrong" src="http://www.freesfx.co.uk/rx2/mp3s/5/16916_1461333028.mp3"></audio>
+	<audio id="buzz" src="http://www.freesfx.co.uk/rx2/mp3s/5/16874_1461333020.mp3"></audio>
 
 	<!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
+ 	<link href="https://fonts.googleapis.com/css?family=Coming+Soon|Gochi+Hand" rel="stylesheet"> 
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,12 +34,15 @@
 </head>
 <body>
 	<div class="text-center">
-		<h1>Simon Game</h1>
-		<h3>Free Code Camp Project</h3>
-		<div class="btn btn-primary" id="blue"></div>
-		<div class="btn btn-danger" id="red"></div>
-		<div class="btn btn-warning" id="yellow"></div>
-		<div class="btn btn-success" id="green"></div>
+	    <h1>Simon Game</h1>
+	    <h3>Free Code Camp Project</h3>
+	    <div class="btn btn-primary" id="blue"></div>
+	    <div class="btn btn-danger" id="red"></div>
+	    <div class="btn btn-warning" id="yellow"></div>
+	    <div class="btn btn-success" id="green"></div>
 	</div>
+  	<div class="text-center">
+    	<div class="btn btn-info" id="start">Start</div>
+  	</div>
 </body>
 </html>

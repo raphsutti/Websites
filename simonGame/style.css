@@ -1,22 +1,24 @@
+h1, h3 {
+  margin: 20px;
+}
 .btn {
-	margin: 10px;
-	padding: 15px;
-	height: 48px;
-	width: 48px;
-	cursor: pointer;
+  width: 45px;
+  height: 45px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.btn#start {
+  width: 120px;
+  height: 60px;
+  font-size: 30px;
+  margin: 50px;
+  
 }
 
 body {
-	background-image: url('https://images.unsplash.com/photo-1502301063654-b24a93a0d0f2');
-	background-size: 80%;
-	background-attachment: fixed;
-	font-family: Pacifico;
-}
-
-h2 {
-	display:inline;
-}
-
-#start{
-	/*margin: 10px;*/
+  background-image: url('https://images.unsplash.com/photo-1502301063654-b24a93a0d0f2');
+  background-size:80%;
+    background-attachment: fixed;
+  font-family: 'Coming Soon', cursive;
 }
