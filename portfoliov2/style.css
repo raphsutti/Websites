@@ -1,0 +1,24 @@
+body {
+	background-image: url('https://wallpapercave.com/wp/3vZjpA5.jpg')
+}
+#logo {
+	width: 60px;
+	border-radius: 5px;
+}
+
+.title-block {
+	margin: 100px 0;
+	background-color: white;
+	padding: 200px 0;
+	height: 200px;
+	width: 400px;
+	border-radius: 10px;
+
+}
+
+}
+
+div > h1 {
+	color: #535353;
+	line-height: 100px;
+}
