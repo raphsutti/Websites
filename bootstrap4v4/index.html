@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Raphael Suttiyotin</title>
+	<title>Bootstrap 4</title>
 	<!-- Bootstrap 4 -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
@@ -35,10 +35,99 @@
 			
 		</div>
 	</div>
-</nav>
-</body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<h4>Column 1</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga accusamus, cupiditate sint quas laudantium labore, nemo iste unde soluta delectus mollitia itaque saepe aperiam ullam facere alias officiis iure architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga accusamus, </p>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<h4>Column 2</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga accusamus, cupiditate sint quas laudantium labore, nemo iste unde soluta delectus mollitia itaque saepe aperiam ullam facere alias officiis iure architecto!</p>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<h4>Column 3</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga accusamus, cupiditate sint quas laudantium labore, nemo iste unde soluta delectus mollitia itaque saepe aperiam ullam facere alias officiis iure architecto! </p>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<h4>Column 4</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga accusamus, cupiditate sint quas laudantium labore, nemo iste unde soluta delectus mollitia itaque saepe aperiam ullam facere alias officiis iure architecto!</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+				<h4><a href="#col1Content" data-toggle="collapse">column1</a></h4>
+				<div id="col1Content" class="collapse show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos tenetur velit obcaecati a quam libero error incidunt voluptatibus neque, in quae aut! Labore atque illum mollitia consequatur veritatis quidem id!</div>
+			</div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+				<h4><a href="#col2Content" data-toggle="collapse">column2</a></h4>
+				<div id="col2Content" class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos tenetur velit obcaecati a quam libero error incidunt voluptatibus neque, in quae aut! Labore atque illum mollitia consequatur veritatis quidem id!</div>
+			</div>
+
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<h4><a href="#col3Content" data-toggle="collapse">column3</a></h4>
+				<div id="col3Content" class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos tenetur velit obcaecati a quam libero error incidunt voluptatibus neque, in quae aut! Labore atque illum mollitia consequatur veritatis quidem id!</div>
+			</div>
+	</div>
+	<div class="well d-none d-xs-block d-sm-block d-md-block d-lg-block">
+		<p>Screen &lt; 768px</p>		
+	</div>
+	<div class="well d-none d-md-block d-lg-block">
+		<p>Screen &gt;768px and &lt; 992px</p>		
+	</div>
+	<div class="well d-none d-lg-block">
+		<p>Screen &gt;992px and &lt; 1200px</p>		
+	</div>
+	<div class="well d-none">
+		<p>Screen &gt;1200px</p>		
+	</div>
+
+	<div class="row">
+		<div class="col-md-6 offset-md-6">
+			<table class="table table-bordered table-striped table-hover">
+		    <thead>
+		    <tr>
+		    <td colspan="4">Best Baseball Players</td>
+		    </tr>
+		    </thead>
+		    <tbody>
+		    <tr>
+		 
+		    <!-- You can adjust the width of table columns as well -->
+		    <th class="col-md-2"></td>
+		 
+		    <!-- Use text alignment like text-center or text-right -->
+		    <th class="text-center">Average</td>
+		    <th class="text-center">RBIs</td>
+		    <th class="text-center">Homeruns</td>
+		    </tr>
+		    <tr>
+		    <td><a href="#">Hank Aaron*</a></td>
+		    <td>.305</td>
+		    <td>2297</td>
+		    <td>755</td>
+		    </tr>
+		    <tr>
+		    <td><a href="#">Babe Ruth*</a></td>
+		    <td>.342</td>
+		    <td>2214</td>
+		    <td>714</td>
+		    </tr>
+		    <tr>
+		    <td><a href="#">Barry Bonds</a></td>
+		    <td>.298</td>
+		    <td>1996</td>
+		    <td>762</td>
+		    </tr>
+		    </tbody>
+		    </table>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
 </html>
