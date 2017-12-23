@@ -9,16 +9,46 @@ body {
 .title-block {
 	margin: 100px 0;
 	background-color: white;
-	padding: 200px 0;
-	height: 200px;
+	padding: 20px;
 	width: 400px;
 	border-radius: 10px;
-
 }
 
+h1 {
+/*	font-family: 'Cabin', sans-serif;
+	
+	font-family: 'Alegreya', serif;
+	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'Exo 2', sans-serif;*/
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-div > h1 {
-	color: #535353;
-	line-height: 100px;
+i {
+	color: #025BAF;
+	padding: 0 10px;
+}
+
+i:hover {
+	color: #404040;
+}
+
+.about-me {
+	background-color: #C6C6C6;
+	border-radius: 10px;
+	padding: 75px 20px
+}
+
+.about-me img {
+	max-height: 250px;
+	border-radius: 10px;
+	border: 3px solid black;
+	display: block;
+	margin: auto;
+}
+
+.about-me p {
+	margin: 20px;
 }
