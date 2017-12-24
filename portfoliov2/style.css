@@ -59,10 +59,19 @@ i:hover {
 	top: -100px;
 }
 
-/*#carousel-content {
-	width: 350px;
-}*/
+.heading {
+	margin: 50px 0 20px 0;
+}
 
-/*.carousel {
-	width: 250px;
-}*/
+.grid {
+	display: grid;
+	/*grid-template-columns: 1fr 2fr 1fr;*/
+	/*grid-template-columns: repeat(auto-fit, 100px);*/
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-rows: repeat(6, 200px);
+}
+.grid > div {
+	margin: 20px 0;
+	background-color: white;
+	border: 1px solid black;
+}
