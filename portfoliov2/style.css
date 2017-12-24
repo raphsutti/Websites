@@ -2,7 +2,7 @@ body {
 	background-image: url('https://wallpapercave.com/wp/3vZjpA5.jpg')
 }
 #logo {
-	width: 60px;
+	width: 40px;
 	border-radius: 5px;
 }
 
@@ -35,13 +35,13 @@ i:hover {
 	color: #404040;
 }
 
-.about-me {
+.content {
 	background-color: #C6C6C6;
 	border-radius: 10px;
-	padding: 75px 20px
+	padding: 50px 20px
 }
 
-.about-me img {
+.content img {
 	max-height: 250px;
 	border-radius: 10px;
 	border: 3px solid black;
@@ -49,6 +49,20 @@ i:hover {
 	margin: auto;
 }
 
-.about-me p {
+.content p {
 	margin: 20px;
 }
+
+#about-link {
+	display: block;
+	position: relative;
+	top: -100px;
+}
+
+/*#carousel-content {
+	width: 350px;
+}*/
+
+/*.carousel {
+	width: 250px;
+}*/
