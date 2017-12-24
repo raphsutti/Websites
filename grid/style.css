@@ -1,0 +1,77 @@
+body {
+	background-image: url('https://wallpapercave.com/wp/3vZjpA5.jpg')
+}
+#logo {
+	width: 40px;
+	border-radius: 5px;
+}
+
+.title-block {
+	margin: 100px 0;
+	background-color: white;
+	padding: 20px;
+	width: 400px;
+	border-radius: 10px;
+}
+
+h1 {
+/*	font-family: 'Cabin', sans-serif;
+	
+	font-family: 'Alegreya', serif;
+	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'Exo 2', sans-serif;*/
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+i {
+	color: #025BAF;
+	padding: 0 10px;
+}
+
+i:hover {
+	color: #404040;
+}
+
+.content {
+	background-color: #C6C6C6;
+	border-radius: 10px;
+	padding: 50px 20px
+}
+
+.content img {
+	max-height: 250px;
+	border-radius: 10px;
+	border: 3px solid black;
+	display: block;
+	margin: auto;
+}
+
+.content p {
+	margin: 20px;
+}
+
+#about-link {
+	display: block;
+	position: relative;
+	top: -100px;
+}
+
+.heading {
+	margin: 50px 0 20px 0;
+}
+
+.grid {
+	display: grid;
+	/*grid-template-columns: 1fr 2fr 1fr;*/
+	/*grid-template-columns: repeat(auto-fit, 100px);*/
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-rows: repeat(6, 200px);
+}
+.grid > div {
+	margin: 20px 0;
+	background-color: white;
+	border: 1px solid black;
+}
