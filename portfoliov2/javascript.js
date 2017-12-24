@@ -1,5 +1,5 @@
-$(document).ready(){
-	$('.carousel').carousel({
-		interval: 50
-	})
-}
+// $(document).ready(){
+// 	$('.carousel').carousel({
+// 		interval: 50
+// 	})
+// }
