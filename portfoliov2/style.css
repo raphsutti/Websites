@@ -1,8 +1,12 @@
+.navbar {
+	opacity: 0.85;
+}
+
 body {
 	background-image: url('https://wallpapercave.com/wp/3vZjpA5.jpg')
 }
 #logo {
-	width: 40px;
+	width: 30px;
 	border-radius: 5px;
 }
 
@@ -65,13 +69,25 @@ i:hover {
 
 .grid {
 	display: grid;
-	/*grid-template-columns: 1fr 2fr 1fr;*/
-	/*grid-template-columns: repeat(auto-fit, 100px);*/
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-template-rows: repeat(6, 200px);
+	grid-template-columns: repeat(auto-fit, 300px);
+	/*grid-template-rows: repeat(2, 300px);*/
 }
+
 .grid > div {
-	margin: 20px 0;
 	background-color: white;
-	border: 1px solid black;
+	border-radius: 10px;
+	padding: 1em;
+	margin: 10px;
+	/*align-self: center;*/
+  	/*justify-self: center;*/
+}
+
+.grid > div:nth-child(odd) {
+	background: #775BC6;
+}
+
+.grid > div > img {
+	max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
