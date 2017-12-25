@@ -18,7 +18,7 @@ body {
 	border-radius: 10px;
 }
 
-h1 {
+h1, h2 {
 /*	font-family: 'Cabin', sans-serif;
 	
 	font-family: 'Alegreya', serif;
@@ -51,10 +51,16 @@ i:hover {
 	border: 3px solid black;
 	display: block;
 	margin: auto;
+	margin-bottom: 40px;
 }
 
 .content p {
-	margin: 20px;
+	/*margin: 20px;*/
+}
+
+.content > h2 {
+	margin: 20px 0;
+	font-size: 50px;
 }
 
 #about-link {
@@ -69,7 +75,7 @@ i:hover {
 
 .grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, 300px);
+	grid-template-columns: repeat(auto-fit, minmax(200px,400px));
 	/*grid-template-rows: repeat(2, 300px);*/
 	grid-column-gap: 1em;
 	grid-row-gap: 1em;
@@ -78,18 +84,21 @@ i:hover {
 .grid > div {
 	background-color: white;
 	border-radius: 10px;
-	padding: 1em;
+	padding: 2em;
 	/*margin: 10px;*/
 	/*align-self: center;*/
   	/*justify-self: center;*/
 }
 
 .grid > div:nth-child(odd) {
-	background: #775BC6;
+	background: #045BB6;
+	color: white
 }
 
 .grid > div > img {
 	max-width: 100%;
     max-height: 100%;
     object-fit: cover;
+    margin-bottom: 10px;
+    border: black 1px solid;
 }
