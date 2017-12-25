@@ -4,26 +4,27 @@ html, body {
 
 h1 {
 	color: #3EC2FF;
-	font-family: Raleway;
+	font-family: 'Cabin', sans-serif;
 }
 
 h2 {
 	color: #FFFFFF;
-	font-family: Roboto;
+    font-family: 'Pangolin', cursive;
 }
 
 #calcOutput {
-	width: 250px;
+	width: 300px;
 	height: 75px;
 	background-color: white;
 	border-radius: 2em 2em 0 0;
 	margin: auto;
+	margin-top: 70px;
 	padding-top: 20px;
 }
 
 #calculator {
 	background-color: grey;
-	width: 250px;
+	width: 300px;
 	padding: 20px 0 30px 0;
 	border-radius: 0 0 2em 2em;
 	margin: auto;
@@ -42,4 +43,8 @@ a {
 	margin: 5px;
 	width: 2.6vw;
 	height: 2.6vw;
+}
+
+.btn {
+	padding: 25px;
 }

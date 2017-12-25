@@ -75,10 +75,10 @@ i:hover {
 
 .grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px,400px));
+	grid-template-columns: repeat(auto-fit, minmax(200px,325px));
 	/*grid-template-rows: repeat(2, 300px);*/
-	grid-column-gap: 1em;
-	grid-row-gap: 1em;
+	grid-column-gap: 2em;
+	grid-row-gap: 2em;
 }
 
 .grid > div {
@@ -101,4 +101,12 @@ i:hover {
     object-fit: cover;
     margin-bottom: 10px;
     border: black 1px solid;
+}
+
+.contact {
+	margin: 100px 0;
+	background-color: #C6C6C6;
+	padding: 20px;
+	height: 200px;
+	border-radius: 10px;
 }
