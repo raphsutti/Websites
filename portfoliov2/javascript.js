@@ -1,6 +1,6 @@
-$(document).ready(){
-	$(".project").on('hover', function() {
-		$(this).fadeToggle();
+// $(document).ready(function() {
+// 	$(".project").hover(function() {
+// 		$(this).fadeToggle();
 
-	});
-}
+// 	});
+// });
