@@ -1,5 +1,6 @@
-// $(document).ready(){
-// 	$('.carousel').carousel({
-// 		interval: 50
-// 	})
-// }
+$(document).ready(){
+	$(".project").on('hover', function() {
+		$(this).fadeToggle();
+
+	});
+}

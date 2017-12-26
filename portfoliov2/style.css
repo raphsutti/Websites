@@ -82,7 +82,7 @@ i:hover {
 }
 
 .grid > div {
-	background-color: white;
+	background-color: #F1F1F1;
 	border-radius: 10px;
 	padding: 2em;
 	/*margin: 10px;*/
