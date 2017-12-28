@@ -1,6 +1,6 @@
-// $(document).ready(function() {
-// 	$(".project").hover(function() {
-// 		$(this).fadeToggle();
-
-// 	});
-// });
+$(document).ready(function() {
+	$(".nav-link").on("click", function(){
+	   $(".nav-item").removeClass("active");
+	   $(this).parent().addClass("active");
+	});
+});
