@@ -1,158 +1,90 @@
-/** {
-	margin: 0;
-	padding: 0;
-}*/
-
 body {
-	background-color: #F4F4F4;
-	color: #555555;
-
-/*	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f4f4f4;
+	color: #555;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
-	font-weight: normal;*/
-	font: normal 16px Arial, Helvetica, sans-serif;
-
 	line-height: 1.6em;
 	margin: 0;
-}
-
-a {
-	text-decoration: none;
-	color: #000;
-}
-
-a:hover {
-	color: red;
-}
-
-a:active {
-	color: green;
-}
-
-a:visited {
-	color: grey;
 }
 
 .container {
 	width: 80%;
 	margin: auto;
+	overflow: hidden;
 }
 
-.button {
-	background-color: #000;
+#main-header {
+	background-color: coral;
 	color: #fff;
-	padding: 5px;
 }
 
-.box-1 {
-	background-color: #333333;
-	color: #FFFFFF;
-
-	border: 5px red solid;
-	padding: 20px;
-
+#navbar {
+	background-color: #333;
+	color: #fff;
 }
 
-.clr {
-	clear: both;
+#navbar ul {
+	padding: 0;
+	list-style: none;
 }
 
-.box-1 h1 {
-	font-family: Tahoma;
-	font-weight: 800;
-	font-style: italic;
-	text-decoration: underline;
-	text-transform: uppercase;
-	letter-spacing: 0.2em;
-	word-spacing: 1em;
+#navbar li {
+	display: inline;
 }
 
-.box-2 {
-	border: 3px dotted #ccc;
-	padding: 20px;
-	margin: 20px 0;
+#navbar a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	padding-right: 15px;
 }
 
-.categories {
-	border: 1px #ccc solid;
-	padding: 10px;
-	border-radius: 15px;
-}
-
-.categories h2 {
+#showcase {
+	background-image: url('http://goldwallpapers.com/uploads/posts/light-abstract-wallpaper/light_abstract_wallpaper_007.jpg');
+	background-position: center right;
+	min-height: 300px;
+	margin-bottom: 30px;
 	text-align: center;
 }
 
-.categories ul {
-	padding: 0;
-	list-style: square;
-
+#showcase h1 {
+	color: #fff;
+	font-size: 50px;
+	line-height: 1.6em;
+	padding-top: 30px;
 }
 
-.categories li {
-	padding-bottom: 6px;
-	border-bottom: dotted 1px #333;
-}
-
-.block {
-	float: left;
-	width: 33.3%;
-}
-
-#main-block {
+#main {
 	float: left;
 	width: 70%;
+	padding: 0 30px;
+	box-sizing: border-box;
 }
 
 #sidebar {
 	float: right;
 	width: 30%;
-	background-color: #333;
+	background: #333;
 	color: #fff;
-	padding: 15px;
+	padding: 10px;
 	box-sizing: border-box;
 }
 
-.p-box {
-	width: 800px;
-	height: 500px;
-	border: 1px solid #000;
-	margin-top: 30px;
-	position: relative;
-	background-image: url('http://goldwallpapers.com/uploads/posts/light-abstract-wallpaper/light_abstract_wallpaper_007.jpg');
-	/*background-repeat: no-repeat;*/
-	/*background-position: 100px 200px;*/
-	/*background-position: center top;*/
-
-.p-box h1 {
-	position: absolute;
-	top: 100px;
-	left: 200px;
+#main-footer {
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
 }
 
-.p-box h2 {
-	position: absolute;
-	bottom: 40px;
-	right: 100px;
-}
-
-.fix-me {
-	position: fixed;
-	top: 300px;
-}
-
-.my-list li:first-child {
-	background: red;
-}
-
-.my-list li:last-child {
-	background: red;
-}
-
-.my-list li:nth-child(4) {
-	background: red;
-}
-
-.my-list li:nth-child(even) {
-	background: red;
+@media(max-width:600px) {
+	#main {
+		width: 100%;
+		float: none;
+	}
+	#sidebar {
+		width: 100%;
+		float: none;
+	}
 }
