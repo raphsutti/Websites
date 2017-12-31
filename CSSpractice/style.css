@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	background-color: #F4F4F4;
 	color: #555555;
@@ -11,11 +16,70 @@ body {
 	margin: 0;
 }
 
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	color: red;
+}
+
+a:active {
+	color: green;
+}
+
+a:visited {
+	color: grey;
+}
+
 .container {
-	width: 500px;
+	width: 80%;
+	margin: auto;
 }
 
 .box-1 {
 	background-color: #333333;
 	color: #FFFFFF;
+
+	border: 5px red solid;
+	padding: 20px;
+
+}
+
+.box-1 h1 {
+	font-family: Tahoma;
+	font-weight: 800;
+	font-style: italic;
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	word-spacing: 1em;
+}
+
+.box-2 {
+	border: 3px dotted #ccc;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+.categories {
+	border: 1px #ccc solid;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.categories h2 {
+	text-align: center;
+}
+
+.categories ul {
+	padding: 0;
+	list-style: square;
+
+}
+
+.categories li {
+	padding-bottom: 6px;
+	border-bottom: dotted 1px #333
 }
