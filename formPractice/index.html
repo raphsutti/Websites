@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Basic HTML Practice</title>
+	<title>Form Practice</title>
 	
 	<!-- Bootstrap 4 -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -29,40 +29,40 @@
 	<hr>	
 	<div class="container">
 		<div class="content">
-			<form action="process.php" method="POST">
-				<div>
+			<form class="my-form" action="process.php" method="POST">
+				<div class="form-group">
 					<label for="">First Name</label>
 					<input type="text" name="firstName" placeholder="Enter here">
 				</div>
-				<div>
+				<div class="form-group">
 					<label for="">Last Name</label>
 					<input type="text" name="lastName">
 				</div>
-				<div>
+				<div class="form-group">
 					<label for="">Email</label>
 					<input type="email" name="email">
 				</div>
-				<div>
+				<div class="form-group">
 					<label for="">Message</label>
 					<textarea name="message" id="" cols="30" rows="10"></textarea>
 				</div>
-				<div>
+				<div class="form-group">
 					<label for="">Gender</label>
 					<select name="Gender" id="">
 						<option value="Male">Male</option>
 						<option value="Female">Female</option>
 					</select>
 				</div>
-				<div>
+				<div class="form-group">
 					<label for="">Age:</label>
 					<input type="number" name="age" value="30">
 				</div>
-				<div>
+				<div class="form-group">
 					<label for="">Birthday:</label>
 					<input type="date" name="birthday">
 				</div>
 				<div>
-					<input type="submit" name="submit" value="Submit">
+					<input class="button" type="submit" name="submit" value="Submit">
 				</div>
 			</form>
 		</div>

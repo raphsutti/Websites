@@ -1,7 +1,7 @@
-* {
+/** {
 	margin: 0;
 	padding: 0;
-}
+}*/
 
 body {
 	background-color: #F4F4F4;
@@ -12,7 +12,7 @@ body {
 	font-weight: normal;*/
 	font: normal 16px Arial, Helvetica, sans-serif;
 
-	line-height: 1.6em
+	line-height: 1.6em;
 	margin: 0;
 }
 
@@ -38,6 +38,12 @@ a:visited {
 	margin: auto;
 }
 
+.button {
+	background-color: #000;
+	color: #fff;
+	padding: 5px;
+}
+
 .box-1 {
 	background-color: #333333;
 	color: #FFFFFF;
@@ -45,6 +51,10 @@ a:visited {
 	border: 5px red solid;
 	padding: 20px;
 
+}
+
+.clr {
+	clear: both;
 }
 
 .box-1 h1 {
@@ -81,5 +91,50 @@ a:visited {
 
 .categories li {
 	padding-bottom: 6px;
-	border-bottom: dotted 1px #333
+	border-bottom: dotted 1px #333;
+}
+
+.block {
+	float: left;
+	width: 33.3%;
+}
+
+#main-block {
+	float: left;
+	width: 70%;
+}
+
+#sidebar {
+	float: right;
+	width: 30%;
+	background-color: #333;
+	color: #fff;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.p-box {
+	width: 800px;
+	height: 500px;
+	border: 1px solid #000;
+	margin-top: 30px;
+	position: relative;
+	background-image: url('http://goldwallpapers.com/uploads/posts/light-abstract-wallpaper/light_abstract_wallpaper_007.jpg');
+}
+
+.p-box h1 {
+	position: absolute;
+	top: 100px;
+	left: 200px;
+}
+
+.p-box h2 {
+	position: absolute;
+	bottom: 40px;
+	right: 100px;
+}
+
+.fix-me {
+	position: fixed;
+	top: 300px;
 }
