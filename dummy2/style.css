@@ -128,6 +128,16 @@ header a:hover {
 	padding: 10px;
 }
 
-.box > img {
+#boxes .box img {
 	height: 100px;
+}
+
+/* Footer */
+
+footer {
+	padding: 20px;
+	margin-top: 20px;
+	color: #fff;
+	background-color: #e8491d;
+	text-align: center;
 }
