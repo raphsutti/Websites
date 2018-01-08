@@ -23,17 +23,17 @@ body, html {
 }
 
 .pimg1 {
-	background-image: url('./img/city.jpeg');
+	background-image: url('./img/city.jpg');
 	min-height: 100%;
 }
 
 .pimg2 {
-	background-image: url('./img/snow.jpeg');
+	background-image: url('./img/snow.jpg');
 	min-height: 400px;
 }
 
 .pimg3 {
-	background-image: url('./img/autumn.jpeg');
+	background-image: url('./img/autumn.jpg');
 	min-height: 400px;
 }
 
