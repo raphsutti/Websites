@@ -1,0 +1,19 @@
+body {
+	background: url('https://static.pexels.com/photos/841116/pexels-photo-841116.jpeg');
+	background-repeat: none;
+	background-size: cover;
+}
+
+h1 {
+	/*color: red;*/
+	color: rgba(0,200,100,0.8);
+	border: purple 5px solid;
+}
+
+h4 {
+	background: rgb(255,100,80);
+}
+
+li {
+	color: green;
+}
