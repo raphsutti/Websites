@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap Basics</title>
+	<!-- <link rel="stylesheet" href="./bootstrap/css/bootstrap.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="S7L71 - bootstrap.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Bootstrap Basics</h1>
+		<button class="btn btn-danger btn-sm">Click me</button>
+		<button class="btn btn-success btn-sm">Success</button>
+		<button class="btn btn-success btn-sm active">Active</button>
+		<button class="btn btn-success btn-sm disabled">Inactive</button>
+		<a href="https://www.getbootstrap.com" class="btn btn-info btn-lg">Bootstrap Docs</a>
+	
+		
+		<div class="jumbotron">
+			<h1>This is a jumbotron</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel porro veritatis distinctio, eligendi doloremque ipsum.</p>
+			<button class="btn btn-warning btn-lg">Hi there</button>
+		</div>
+
+		<form>
+			<div class="form-group">
+				<label for="exampleInputEmail1">Email address</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			</div>
+			<div class="form-group">
+				<label for="exampleInputPassword1">Password</label>
+				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			</div>
+			<div class="form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1">Check me out</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+
+		<form class="form-inline">
+			<div class="form-group mb-2">
+				<label for="staticEmail2" class="sr-only">Email</label>
+				<input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+			</div>
+			<div class="form-group mx-sm-3 mb-2">
+				<label for="inputPassword2" class="sr-only">Password</label>
+				<input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+			</div>
+			<button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+		</form>
+	</div>
+</body>
+</html>
