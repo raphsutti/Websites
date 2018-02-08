@@ -7,6 +7,9 @@ var guess = Number(prompt('Guess a number'));
 // check if guess correct
 if (guess === secretNumber) {
 	alert('You got it right!');
+} else if (guess > secretNumber) {
+	alert('Too high, guess again');
+
 } else {
-	alert('Wrong!');
+	alert('Too low, guess again');
 }
