@@ -11,3 +11,14 @@ function isUniform(a) {
 	} return true;
 
 }
+
+/*
+function isUniform(a) {
+	for(var i=1; i<a.length; i++) {
+		if(a[i] != a[0]) {
+			return false;
+		}
+	} return true;
+
+}
+*/
